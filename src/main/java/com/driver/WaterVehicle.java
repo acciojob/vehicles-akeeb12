@@ -1,6 +1,10 @@
 package com.driver;
 
 public interface WaterVehicle {
-    public String getVehicleName();
-    public int getVehicleCapacity();
-}
+        // Method to get the name of the vehicle
+        String getVehicleName();
+
+        // Method to get the capacity of the vehicle
+        int getVehicleCapacity();
+    }
+
