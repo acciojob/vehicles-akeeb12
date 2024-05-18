@@ -15,4 +15,9 @@ public class F1 extends Car {
     public void setTopSpeed(int topSpeed) {
         this.topSpeed = topSpeed;
     }
+
+    public int getCurrentSpeed()
+    {
+        return super.getCurrentSpeed();
+    }
 }
