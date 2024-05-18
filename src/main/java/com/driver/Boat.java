@@ -1,8 +1,8 @@
 package com.driver;
 
     public class Boat implements WaterVehicle {
-        private String name;
-        private int capacity;
+        private final String name;
+        private final int capacity;
 
         // Constructor that requires name and capacity arguments
         public Boat(String name, int capacity) {
