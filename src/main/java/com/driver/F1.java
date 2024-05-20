@@ -8,7 +8,7 @@ public class F1 extends Car {
         this.topSpeed = topSpeed;
     }
 
-    public int getTopSpeed() {
+    public int getTopSpeed() {;
         return topSpeed;
     }
 
