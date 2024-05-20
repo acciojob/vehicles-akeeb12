@@ -2,9 +2,11 @@ package com.driver;
 
 public class Vehicle {
     private String type;
+    private String name;
 
-    public Vehicle(String type) {
+    public Vehicle(String type, String name) {
         this.type = type;
+        this.name = name;
     }
 
     public String getType() {
@@ -13,5 +15,13 @@ public class Vehicle {
 
     public void setType(String type) {
         this.type = type;
+    }
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
