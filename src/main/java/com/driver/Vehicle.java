@@ -16,8 +16,8 @@ public class Vehicle {
     public void setType(String type) {
         this.type = type;
     }
-    public String getName()
-    {
+
+    public String getName() {
         return name;
     }
 

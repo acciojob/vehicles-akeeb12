@@ -3,21 +3,18 @@ package com.driver;
 public class Main {
     public static void main(String[] args) {
         // Create an instance of Vehicle
-        Vehicle vehicle = new Vehicle("General Vehicle","Generic name");
+        Vehicle vehicle = new Vehicle("General Vehicle", "Generic name");
         System.out.println("Vehicle Type: " + vehicle.getType());
         System.out.println("Vehicle Name: " + vehicle.getName());
 
-
         // Create an instance of Car
-        Car car = new Car("Sedan", "ToyotaName","Toyota Corolla");
-//        car.setCurrentSpeed(100); // Set the current speed
+        Car car = new Car("Sedan", "ToyotaName", "Toyota Corolla");
         System.out.println("Car Type: " + car.getType());
         System.out.println("Car Model: " + car.getModel());
-        System.out.println(("Car Name:" + car.getName()));
+        System.out.println("Car Name: " + car.getName());
 
         // Create an instance of F1
-        F1 f1Car = new F1("Race Car","FerrariName", "Ferrari F1", 350);
-//        f1Car.setCurrentSpeed(200); // Set the current speed
+        F1 f1Car = new F1("Race Car", "FerrariName", "Ferrari F1", 350);
         System.out.println("F1 Car Type: " + f1Car.getType());
         System.out.println("F1 Car Model: " + f1Car.getModel());
         System.out.println("F1 Car Name: " + f1Car.getName());

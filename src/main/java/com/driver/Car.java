@@ -2,8 +2,6 @@ package com.driver;
 
 public class Car extends Vehicle {
     private String model;
-    private int currentSpeed;
-
 
     public Car(String type, String name, String model) {
         super(type, name);
@@ -17,5 +15,4 @@ public class Car extends Vehicle {
     public void setModel(String model) {
         this.model = model;
     }
-
 }
