@@ -1,6 +1,7 @@
 package com.driver;
 
 public class Car extends Vehicle {
+    private String type;
     private String model;
     private int doors;
     private int gears;
@@ -10,8 +11,8 @@ public class Car extends Vehicle {
     private int currentGear;
 
     public Car(String type, String name, String model) {
-        super(type, name);
-        this.model = model;
+        super(name, model);
+        this.type = type;
         this.doors = 4; // example value, adjust as needed
         this.gears = 5; // example value, adjust as needed
         this.wheels = 4; // example value, adjust as needed

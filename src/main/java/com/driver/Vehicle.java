@@ -6,9 +6,9 @@ public class Vehicle {
     private int currentSpeed;
     private int currentDirection;
 
-    public Vehicle(String type, String name) {
+    public Vehicle(String type, String model) {
         this.type = type;
-        this.name = name;
+        this.name = model;
         this.currentSpeed = 0;
         this.currentDirection = 0;
     }
