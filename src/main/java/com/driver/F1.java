@@ -15,4 +15,12 @@ public class F1 extends Car {
     public void setTopSpeed(int topSpeed) {
         this.topSpeed = topSpeed;
     }
+
+    public boolean isManual() {
+        return true; // example value, adjust as needed
+    }
+
+    public void accelerate(int speed) {
+        move(speed, getCurrentDirection());
+    }
 }
