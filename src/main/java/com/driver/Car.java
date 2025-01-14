@@ -1,5 +1,6 @@
 package com.driver;
 
+
 public class Car extends Vehicle {
     private String type;
     private String model;

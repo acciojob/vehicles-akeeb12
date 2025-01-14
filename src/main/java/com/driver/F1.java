@@ -5,7 +5,7 @@ public class F1 extends Car {
 
     public F1(String type, String name, String model, int topSpeed) {
         super(type, name, model);
-        this.speed = speed;
+        this.speed = topSpeed;
     }
 
     public int getTopSpeed() {
@@ -16,6 +16,7 @@ public class F1 extends Car {
         this.speed = topSpeed;
     }
 
+    @Override
     public boolean isManual() {
         return true; // example value, adjust as needed
     }
