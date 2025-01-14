@@ -22,6 +22,10 @@ public class Car extends Vehicle {
         this.currentGear = 1;
     }
 
+    public Car(String type, String model) {
+        super(type, model);
+    }
+
     public String getModel() {
         return model;
     }
@@ -60,5 +64,10 @@ public class Car extends Vehicle {
 
     public void changeGear(int gear) {
         this.currentGear = gear;
+    }
+
+    @Override
+    public String getType() {
+        return type;
     }
 }
