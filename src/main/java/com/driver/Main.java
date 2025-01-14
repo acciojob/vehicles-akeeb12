@@ -6,12 +6,12 @@ public class Main {
         System.out.println("Vehicle Type: " + vehicle.getType());
         System.out.println("Vehicle Name: " + vehicle.getName());
 
-        Car car = new Car("Sedan", "ToyotaName", "Toyota Corolla");
+        Car car = new Car("Sedan", "Toyota", "Toyota Corolla");
         System.out.println("Car Type: " + car.getType());
         System.out.println("Car Model: " + car.getModel());
         System.out.println("Car Name: " + car.getName());
 
-        F1 f1Car = new F1("Race Car", "FerrariName", "Ferrari F1", 350);
+        F1 f1Car = new F1("Race Car", "Ferrari", "Ferrari F1", 350);
         System.out.println("F1 Car Type: " + f1Car.getType());
         System.out.println("F1 Car Model: " + f1Car.getModel());
         System.out.println("F1 Car Name: " + f1Car.getName());
