@@ -66,7 +66,7 @@ public class Car extends Vehicle {
         this.currentGear = gear;
     }
 
-    @Override
+
     public String getType() {
         return type;
     }
