@@ -12,6 +12,7 @@ public class Car extends Vehicle {
 
     public Car(String type, String name, String model) {
         super(name, model);
+        this.model = model;
         this.type = type;
         this.doors = 4; // example value, adjust as needed
         this.gears = 5; // example value, adjust as needed
