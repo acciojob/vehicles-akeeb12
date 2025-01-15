@@ -66,4 +66,12 @@ public class Car extends Vehicle {
     public void changeGear(int gear) {
         this.currentGear = gear;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 }
