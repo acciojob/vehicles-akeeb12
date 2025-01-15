@@ -3,36 +3,31 @@ package com.driver;
 public class Car extends Vehicle {
     private String type;
     private String model;
-    private final int doors;
+    private int doors;
     private int gears;
     private int wheels;
-    private boolean manual;
+    private boolean isManual;
     private int seats;
     private int currentGear;
 
-    public Car(String type, String name, String model) {
-        super(name, model);
+    public Car(String type, String name, int wheels, int gears,int doors, boolean isManual,int seats) {
+        super(name);
         this.model = model;
         this.type = type;
         this.doors = 4; // example value, adjust as needed
         this.gears = 5; // example value, adjust as needed
         this.wheels = 4; // example value, adjust as needed
-        this.manual = true; // example value, adjust as needed
+        this.isManual = isManual; // example value, adjust as needed
         this.seats = 5; // example value, adjust as needed
         this.currentGear = 1;
     }
 
-    public Car(int doors, String type, String model) {
-        super(type, model);
-        this.doors = doors;
+    public Car(String name) {
+        super(name);
     }
 
     public String getModel() {
         return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
     }
 
     public int getDoors() {
@@ -48,7 +43,7 @@ public class Car extends Vehicle {
     }
 
     public boolean isManual() {
-        return manual;
+        return isManual;
     }
 
     public int getSeats() {
@@ -59,12 +54,14 @@ public class Car extends Vehicle {
         return currentGear;
     }
 
-    public void changeSpeed(int speed, int direction) {
-        move(speed, direction);
+    public void changeSpeed(int newSpeed, int newDirection) {
+        super.move(newSpeed, newDirection);
+        System.out.println("changeSpeed method called - the speed is changes to:" + newSpeed + ", and the direction is changes to:" + newDirection + "degrees");
     }
 
-    public void changeGear(int gear) {
-        this.currentGear = gear;
+    public void changeGear(int newGear) {
+        this.currentGear = newGear;
+        System.out.println("gear changes to: " + currentGear);
     }
 
     public String getType() {

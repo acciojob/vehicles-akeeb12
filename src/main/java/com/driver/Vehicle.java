@@ -1,34 +1,20 @@
 package com.driver;
 
 public class Vehicle {
-    private String type;
+    // private String type;
     private String name;
     private int currentSpeed;
     private int currentDirection;
 
-    public Vehicle(String type, String model) {
-        this.type = type;
-        this.name = model;
-        this.currentSpeed = 0;
-        this.currentDirection = 0;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getName() {
+    public String getName(){
         return name;
     }
 
-    public void setName(String name) {
+    public Vehicle(String name) {
         this.name = name;
+        this.currentSpeed = 0;
+        this.currentDirection = 0;
     }
-
     public int getCurrentSpeed() {
         return currentSpeed;
     }
@@ -38,15 +24,18 @@ public class Vehicle {
     }
 
     public void move(int speed, int direction) {
-        this.currentSpeed = speed;
-        this.currentDirection = direction;
+        currentSpeed = speed;
+        currentDirection = direction;
+        System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
     }
 
     public void steer(int direction) {
-        this.currentDirection = direction;
+       currentDirection = currentDirection + direction;
+        System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }
 
     public void stop() {
-        this.currentSpeed = 0;
+        currentSpeed = 0;
+        System.out.println("Stop method called - The vehicle is stopped");
     }
 }
