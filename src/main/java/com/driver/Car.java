@@ -13,9 +13,9 @@ public class Car extends Vehicle {
     public Car(String type, String name, int wheels, int gears,int doors, boolean isManual,int seats) {
         super(name);
         this.type = type;
-        this.doors = 4; // example value, adjust as needed
-        this.gears = 5; // example value, adjust as needed
-        this.wheels = 4; // example value, adjust as needed
+        this.doors = doors; // example value, adjust as needed
+        this.gears = gears; // example value, adjust as needed
+        this.wheels = wheels; // example value, adjust as needed
         this.isManual = isManual; // example value, adjust as needed
         this.seats = seats; // example value, adjust as needed
         this.currentGear = 1;
