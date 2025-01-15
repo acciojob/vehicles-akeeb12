@@ -22,6 +22,11 @@ public class Car extends Vehicle {
         this.currentGear = 1;
     }
 
+    public Car(int doors, String type, String model) {
+        super(type, model);
+        this.doors = doors;
+    }
+
     public String getModel() {
         return model;
     }
