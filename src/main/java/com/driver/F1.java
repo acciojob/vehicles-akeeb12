@@ -22,6 +22,7 @@ public class F1 extends Car {
     }
 
     public void accelerate(int speed) {
+        
         move(speed, getCurrentDirection());
     }
 }

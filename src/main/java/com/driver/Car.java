@@ -1,15 +1,12 @@
 package com.driver;
 
-import java.rmi.server.SkeletonNotFoundException;
-
-
 public class Car extends Vehicle {
     private String type;
     private String model;
-    private int doors;
+    private final int doors;
     private int gears;
     private int wheels;
-    private boolean isManual;
+    private boolean manual;
     private int seats;
     private int currentGear;
 
@@ -19,23 +16,9 @@ public class Car extends Vehicle {
         this.doors = 4; // example value, adjust as needed
         this.gears = 5; // example value, adjust as needed
         this.wheels = 4; // example value, adjust as needed
-        this.isManual = isManual; // example value, adjust as needed
+        this.manual = true; // example value, adjust as needed
         this.seats = 5; // example value, adjust as needed
         this.currentGear = 1;
-    }
-
-    public void changeGear(int newGear){
-        currentGear = newGear;
-        System.out.println("changeGear method called - The gear is changed to: " + currentGear);
-    }
-
-    public void changeSpeed(int newSpeed, int newDirection){
-        move(newSpeed, newDirection);
-        System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
-    }
-
-    public Car(String type, String model) {
-        super(type, model);
     }
 
     public String getModel() {
@@ -59,7 +42,7 @@ public class Car extends Vehicle {
     }
 
     public boolean isManual() {
-        return isManual;
+        return manual;
     }
 
     public int getSeats() {
@@ -70,7 +53,11 @@ public class Car extends Vehicle {
         return currentGear;
     }
 
-    public String getType() {
-        return type;
+    public void changeSpeed(int speed, int direction) {
+        move(speed, direction);
+    }
+
+    public void changeGear(int gear) {
+        this.currentGear = gear;
     }
 }
