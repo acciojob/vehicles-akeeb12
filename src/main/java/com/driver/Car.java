@@ -54,7 +54,7 @@ public class Car extends Vehicle {
     }
 
     public void changeSpeed(int newSpeed, int newDirection) {
-        super.move(newSpeed, newDirection);
+        move(newSpeed, newDirection);
         System.out.println("changeSpeed method called - the speed is changes to:" + newSpeed + ", and the direction is changes to:" + newDirection + "degrees");
     }
 

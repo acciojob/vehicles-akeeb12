@@ -6,7 +6,7 @@ public class Vehicle {
     private int currentSpeed;
     private int currentDirection;
 
-    public String getName() {
+    public String getName() {   
         return name;
     }
 

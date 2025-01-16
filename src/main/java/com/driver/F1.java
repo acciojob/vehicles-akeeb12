@@ -15,7 +15,7 @@ public class F1 extends Car {
 
     public void accelerate(int rate) {
 
-        int newSpeed = 0;
+        int newSpeed;
         int currentSpeed = super.getCurrentSpeed();
         newSpeed = rate+currentSpeed;
 
