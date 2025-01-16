@@ -6,7 +6,6 @@ public class F1 extends Car {
     
     public F1(String name, boolean isManual) {
         super(name);
-        this.isManual = isManual;
     }
 
     @Override
